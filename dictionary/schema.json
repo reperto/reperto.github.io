@@ -1,0 +1,49 @@
+{
+  "definitions": {
+    "term": {
+      "type": "object",
+      "properties": {
+        "term": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "alias": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "entry": {
+        "type": "string",
+        "description": "The norwegian term"
+      },
+      "references": {
+        "type": "array",
+        "items": {
+          "type": "string",
+          "format": "uri",
+          "pattern": "^https?://"
+        }
+      },
+      "en": {
+        "$ref": "#/definitions/term"
+      },
+      "no": {
+        "$ref": "#/definitions/term"
+      }
+    },
+    "required": [
+      "no",
+      "en"
+    ]
+  }
+}

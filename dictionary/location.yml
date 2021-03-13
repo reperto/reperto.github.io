@@ -1,0 +1,18 @@
+---
+- entry: postcode
+  references:
+    - https://en.wikipedia.org/wiki/Postal_codes_in_Norway
+    - https://www.bring.no/tjenester/adressetjenester/postnummer
+  no:
+    term: postnummer
+    description: |
+      Norske postnummer er en firesifret kode som ble innført på 1960-tallet for å effektivisere postsorteringen.
+    alias:
+      - postkode
+  en:
+    term: postcode
+    description: |
+      Norwegian postcodes are four-digit codes introduced in the 1960s to improve the efficiency of post sorting.
+    alias:
+      - postalcode
+      - postal number
